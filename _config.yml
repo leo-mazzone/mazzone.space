@@ -10,6 +10,8 @@ url: "https://mazzone.space"
 github_url:  https://github.com/leo-mazz
 linkedin_url: https://www.linkedin.com/in/leonardomazzone/
 permalink: /:title:output_ext
+kramdown:
+  syntax_highlighter: coderay
 
 # Build settings
 plugins:

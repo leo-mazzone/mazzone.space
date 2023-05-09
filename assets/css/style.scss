@@ -77,7 +77,8 @@ body {
     }
 
     p, li {
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 16px;
         font-family: Helvetica, Arial, sans-serif;
         font-weight: 300;
@@ -144,6 +145,16 @@ body {
 
         strong {
             font-weight: bold;
+        }
+
+        .code {
+            font-size: 15px;
+            padding: 10px;
+            background-color: black;
+
+            .line-numbers {
+                display: none;
+            }
         }
     }
 
