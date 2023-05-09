@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+
+<div class="article">
+    {% if page.cover %}<img src="{{ site.url }}/assets/img/{{ page.cover }}" />{% endif %}
+    <div class="article-meta">
+      <div class="author"><a href="{{ site.url }}">{{ site.author }}</a></div>
+      <div class="heading-links"> <a href="mailto:{{ site.email }}">Email</a> - <a href="{{ site.github_url }}">Github</a> - <a href="{{ site.linkedin_url }}">LinkedIn</a></div>
+    </div>
+
+    {% if site.posts.size == 0 %}
+    <em class="blog-disclaimer">Work in progress.</em>
+    {% endif %}
+    
+
+    {% for post in site.posts %}
+      {% assign currentdate = post.date | date: "%Y" %}
+      {% if currentdate != date %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h2 class="post-list">{{ currentdate }}</h2>
+        <ul class="post-links">
+        {% assign date = currentdate %}
+      {% endif %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+</div>

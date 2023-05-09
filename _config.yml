@@ -1,0 +1,20 @@
+# Site settings
+title: Leonardo Mazzone
+email: leo@mazzone.space
+author: Leonardo Mazzone
+keywords: "Leonardo Mazzone, AI, Data Science, Machine Learning, Privacy, Blog"
+description: >- # this means to ignore newlines until "baseurl:"
+  Leonardo Mazzone's personal website and blog. I know a thing or two about AI, data science and data privacy.
+baseurl: ""
+url: "https://mazzone.space"
+github_url:  https://github.com/leo-mazz
+linkedin_url: https://www.linkedin.com/in/leonardomazzone/
+permalink: /:title:output_ext
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+exclude:
+  - .htaccess
+  - README.md
