@@ -4,7 +4,7 @@ email: leo@mazzone.space
 author: Leonardo Mazzone
 keywords: "Leonardo Mazzone, AI, Data Science, Machine Learning, Privacy, Blog"
 description: >- # this means to ignore newlines until "baseurl:"
-  Leonardo Mazzone's personal website and blog. I know a thing or two about AI, data science and data privacy.
+  Leonardo Mazzone's lucubrations on data science.
 baseurl: ""
 url: "https://mazzone.space"
 github_url:  https://github.com/leo-mazz
