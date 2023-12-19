@@ -181,6 +181,13 @@ body {
                 display: none;
             }
         }
+
+        mjx-container {
+            display: inline-grid;
+            overflow-x: auto;
+            overflow-y: hidden;
+            max-width: 100%;
+        }
     }
 
 
@@ -188,7 +195,7 @@ body {
 
 @media (max-width: 1200px) {
     .article {
-        width: 80%;
+        width: 90%;
     }
 }
 
