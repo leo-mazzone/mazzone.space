@@ -12,10 +12,10 @@ linkedin_url: https://www.linkedin.com/in/leonardomazzone/
 permalink: /:title:output_ext
 kramdown:
   syntax_highlighter: coderay
-
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 exclude:
   - .htaccess
