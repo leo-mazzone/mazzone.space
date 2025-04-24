@@ -36,6 +36,26 @@ body {
     text-decoration: none;
 }
 
+.disclaimer {
+    &--blue {
+        background-color: #1c75ce3d;
+        border-left: 4px solid #1c75ce82;
+    }
+
+    &--red {
+        background-color: #ce1c1c3d;
+        border-left: 4px solid #ce1c1c3d;
+    }
+
+    &--yellow {
+        background-color: #cec81c3d;
+        border-left: 4px solid #cec81c3d;
+    }
+
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
 
 .article {
     width: 50%;
