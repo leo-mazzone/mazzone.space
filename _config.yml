@@ -2,12 +2,12 @@
 title: Leonardo Mazzone
 email: leo@mazzone.space
 author: Leonardo Mazzone
-keywords: "Leonardo Mazzone, AI, Data Science, Machine Learning, Privacy, Blog"
+keywords: "Leonardo Mazzone, AI, Data Science, Machine Learning, Software Engineering, Blog"
 description: >- # this means to ignore newlines until "baseurl:"
-  Leonardo Mazzone's lucubrations on data science.
+  Leonardo Mazzone's sparse thoughts on AI, data and software engineering.
 baseurl: ""
 url: "https://mazzone.space"
-github_url:  https://github.com/leo-mazz
+github_url:  https://github.com/leo-mazzone
 linkedin_url: https://www.linkedin.com/in/leonardomazzone/
 permalink: /:title:output_ext
 kramdown:
