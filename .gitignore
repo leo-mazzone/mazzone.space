@@ -1,4 +1,10 @@
-_drafts/
+_drafts/*
+!_drafts/.gitkeep
+
+_posts/*
+!_posts/.gitkeep
+
+justfile
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,jekyll,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,jekyll,visualstudiocode
