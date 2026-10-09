@@ -3,17 +3,18 @@
   {% include head.html %}
   <body>
 
-  <div class="article">
-    {% if page.cover %}<img src="{{ site.url }}/assets/img/{{ page.cover }}" />{% endif %}
-    <div class="article-meta">
-      <div>
-        <span class="author"><a href="{{ site.url }}">{{ site.author }}</a></span>
-        <span class="date">- {{ page.date | date_to_long_string }}</span>
-      </div>
-    </div>
-    <h1>{{ page.title }}</h1>
-    <div class="article-content">{{ content }}</div>
-  </div>
-  <footer></footer>
+    <main class="article">
+      <nav class="article-meta" aria-label="Site navigation">
+        <span class="author"><a href="{{ '/' | relative_url }}">{{ site.author }}</a></span>
+      </nav>
+      <article>
+        <header class="post-header">
+          <time class="eyebrow" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d %B %Y' }}</time>
+          <h1>{{ page.title | escape }}</h1>
+          {% if page.cover %}<img class="header-img" src="{{ '/assets/img/' | append: page.cover | relative_url }}" alt="{{ page.cover_alt | default: '' | escape }}">{% endif %}
+        </header>
+        <div class="article-content">{{ content }}</div>
+      </article>
+    </main>
   </body>
 </html>

@@ -3,21 +3,31 @@ layout: default
 ---
 
 
-<div class="article">
-    {% if page.cover %}<img src="{{ site.url }}/assets/img/{{ page.cover }}" />{% endif %}
-    <div class="article-meta">
-      <div class="author"><a href="{{ site.url }}">{{ site.author }}</a></div>
-      <div class="heading-links"> <a href="mailto:{{ site.email }}">Email</a> - <a href="{{ site.github_url }}">Github</a> - <a href="{{ site.linkedin_url }}">LinkedIn</a></div>
+<main class="home">
+  <header class="home-header">
+    <h1>{{ site.author }}</h1>
+    <p class="introduction">ML Engineer @ UK Gov</p>
+    <nav class="heading-links" aria-label="Contact and profiles">
+      <a href="mailto:{{ site.email }}">Email <span aria-hidden="true">↗</span></a>
+      <a href="{{ site.github_url }}">GitHub <span aria-hidden="true">↗</span></a>
+      <a href="{{ site.linkedin_url }}">LinkedIn <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <section class="writing" aria-labelledby="writing-title">
+    <div class="section-heading">
+      <h2 id="writing-title">Posts</h2>
     </div>
-
     {% if site.posts.size == 0 %}
-    <em class="blog-disclaimer">Work in progress.</em>
+      <p class="blog-disclaimer">Work in progress.</p>
+    {% else %}
+      <ul class="post-links">
+        {% for post in site.posts %}
+          <li class="post-entry">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d %b %Y' }}</time>
+          </li>
+        {% endfor %}
+      </ul>
     {% endif %}
-    
-
-    <ul class="post-links">
-    {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-</div>
+  </section>
+</main>
